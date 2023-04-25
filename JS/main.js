@@ -28,7 +28,9 @@ function calcularInteresCompuesto() {
 
 // Reiniciar formulario y resultado
 function reiniciarSimulador() {
-	document.getElementById("formulario").reset();
+	document.getElementById("capitalInicial").value = "";
+    document.getElementById("tasaInteres").value = "";
+    document.getElementById("tiempoInversion").value = "";
+    document.getElementById("capitalMensual").value = "";
 	document.getElementById("resultado").style.display = "none";
 }
-
