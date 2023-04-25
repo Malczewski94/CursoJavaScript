@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Interactivo de Interés Compuesto</title>
+    <script src="./JS/main.js"></script>
+</head>
+<body>
+    <h1>Simulador Interactivo de Interés Compuesto</h1>
+    <p>Ingrese los valores para calcular el interés compuesto:</p>
+    <label>Capital:</label>
+    <input type="text" id="capital" placeholder="Ingrese el capital inicial"><br><br>
+    <label>Tasa de Interés (% anual):</label>
+    <input type="text" id="tasa" placeholder="Ingrese la tasa de interés"><br><br>
+    <label>Tiempo (en años):</label>
+    <input type="text" id="tiempo" placeholder="Ingrese el tiempo"><br><br>
+    <button onclick="calcularInteresCompuesto()">Calcular</button>
+    <button onclick="reiniciarSimulador()">Reiniciar</button><br><br>
+    <div id="resultado-monto"></div>
+    <div id="resultado-interes"></div>
+</body>
+</html>
