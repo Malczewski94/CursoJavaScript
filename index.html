@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador Interactivo de Interés Compuesto</title>
-    <script src="./JS/main.js"></script>
+	<meta charset="UTF-8">
+	<title>Simulador de interés compuesto</title>
+	<link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
-    <h1>Simulador Interactivo de Interés Compuesto</h1>
-    <p>Ingrese los valores para calcular el interés compuesto:</p>
-    <label>Capital:</label>
-    <input type="text" id="capital" placeholder="Ingrese el capital inicial"><br><br>
-    <label>Tasa de Interés (% anual):</label>
-    <input type="text" id="tasa" placeholder="Ingrese la tasa de interés"><br><br>
-    <label>Tiempo (en años):</label>
-    <input type="text" id="tiempo" placeholder="Ingrese el tiempo"><br><br>
-    <button onclick="calcularInteresCompuesto()">Calcular</button>
-    <button onclick="reiniciarSimulador()">Reiniciar</button><br><br>
-    <div id="resultado-monto"></div>
-    <div id="resultado-interes"></div>
+	<div class="container">
+		<h1>Simulador de interés compuesto</h1>
+		<form>
+			<label for="capitalInicial">Capital inicial:</label>
+			<input type="text" id="capitalInicial" name="capitalInicial" required>
+			<label for="tasaInteres">Tasa de interés (% anual):</label>
+			<input type="text" id="tasaInteres" name="tasaInteres" required>
+			<label for="tiempoInversion">Tiempo de inversión (en años):</label>
+			<input type="text" id="tiempoInversion" name="tiempoInversion" required>
+			<label for="capitalMensual">Añadir capital mensualmente:</label>
+			<input type="text" id="capitalMensual" name="capitalMensual" required>
+			<button type="button" onclick="calcularInteresCompuesto()">Calcular</button>
+			<button type="button" onclick="reiniciarSimulador()">Reiniciar</button>
+		</form>
+		<div id="resultado"></div>
+	</div>
+	<script src="./JS/main.js"></script>
 </body>
 </html>
