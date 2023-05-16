@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simulador de interés compuesto</title>
-	<link rel="stylesheet" href="./CSS/styles.css">
+    <title>Piedra, Papel y Tijeras</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Simulador de interés compuesto</h1>
-		<form>
-			<label for="capitalInicial">Capital inicial:</label>
-			<input type="text" id="capitalInicial" name="capitalInicial" required>
-			<label for="tasaInteres">Tasa de interés (% anual):</label>
-			<input type="text" id="tasaInteres" name="tasaInteres" required>
-			<label for="tiempoInversion">Tiempo de inversión (en años):</label>
-			<input type="text" id="tiempoInversion" name="tiempoInversion" required>
-			<label for="capitalMensual">Añadir capital mensualmente:</label>
-			<input type="text" id="capitalMensual" name="capitalMensual" required>
-			<button type="button" onclick="calcularInteresCompuesto()">Calcular</button>
-			<button type="button" onclick="reiniciarSimulador()">Reiniciar</button>
-		</form>
-		<div id="resultado"></div>
-	</div>
-	<script src="./JS/main.js"></script>
+    <h1>Piedra, Papel y Tijeras</h1>
+    <div>
+        <div><p>Jugador: </p><span id="jugador">0</span></div>
+        <div><p>Computadora: </p><span id="computadora">0</span></div>
+    </div>
+    <div class="opciones">
+        <button id="piedra"><img src="./Piedra.png" alt=""><p>Piedra</p></button>
+        <button id="papel"><img src="./Papel.png" alt=""><p>Papel</p></button>
+        <button id="tijeras"><img src="./Tijeras.png" alt=""><p>Tijeras</p></button>
+    </div>
+    <div id="resultado">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
