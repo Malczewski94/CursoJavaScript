@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 44.9px);
+    grid-template-rows: repeat(8, 44.9px);
+    gap: 1px;
+    background: url(./mapa.jpg);
+}
+
+.cell {
+    width: 44.9px;
+    height: 44.9px;
+    position: relative;
+}
+
+.character {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(./pj.png);
+    background-size: contain;
+}
