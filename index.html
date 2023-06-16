@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busqueda del tesoro</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
 </head>
 <body>
     <h1>Busqueda del tesoro</h1>
+    <select id="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="medium">Medio</option>
+        <option value="hard">Difícil</option>
+    </select>
+    <button id="start-button">Iniciar juego</button>
+    <div id="time"></div>
+    <div id="score"></div>
     <div id="board"></div>
     <div id="message"></div>
     <script src="./main.js"></script>
